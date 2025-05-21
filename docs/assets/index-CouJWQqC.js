@@ -18754,7 +18754,7 @@ const Ef = "/ra2581392313043/assets/logo-CD9xdn-P.png",
             sx: { textAlign: "justify" },
             color: "secondary.main",
             children:
-              "Cristão, casado, pai da Elisa e do Eduardo. Estudante de Desenvolvimento de Software Multiplataforma na FATEC Jacareí. Apaixonado por matemática, tecnologia e inovação. Atualmente, estou me tornando desenvolvedor full stack, com foco inicial em back-end. Meu objetivo é realizar a transição de carreira da área de Logística para a programação. Estou sempre em busca de novos desafios e oportunidades para aprender e crescer profissionalmente. Aberto a novas oportunidades de trabalho, seja como desenvolvedor júnior ou pleno. Se você gostou do meu trabalho e deseja me ajudar a crescer, entre em contato. Ficarei muito feliz em contribuir com o seu projeto.",
+              "Cristão, casado, pai da Elisa e do Eduardo. Estudante de Desenvolvimento de Software Multiplataforma na FATEC Jacareí. Apaixonado por matemática, tecnologia e inovação. Atualmente, estou me tornando desenvolvedor full stack, com foco inicial em back-end. Em novembro de 2024, realizei a transição de carreira da área de Logística para a programação, trabalho no Programa Queimadas do INPE, atuo na área de Infraestrutura, DevSecOps e Desenovlvimento. Estou sempre em busca de novos desafios e oportunidades para aprender e crescer profissionalmente.",
           }),
         ],
       }),
