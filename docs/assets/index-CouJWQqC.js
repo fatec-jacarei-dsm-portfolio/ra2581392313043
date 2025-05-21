@@ -23535,7 +23535,7 @@ let Bf = op({
 });
 Bf = cC(Bf);
 const N1 = Bf,
-  Tr = "/ra2581392313043",
+  Tr = "/ra2581392313043/",
   zR = [
     { name: "TypeScript", icon: `${Tr}icon/typescript-icon.png` },
     { name: "JavaScript", icon: `${Tr}icon/javascript-icon.png` },
@@ -23603,7 +23603,7 @@ const N1 = Bf,
       ],
     });
   },
-  Oi = "/ra2581392313043",
+  Oi = "/ra2581392313043/",
   jR = [
     {
       id: 1,
