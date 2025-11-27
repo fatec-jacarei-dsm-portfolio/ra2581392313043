@@ -41,22 +41,6 @@ const Footer = () => {
             <Box textAlign="center">
               <IconButton
                 component={Link}
-                href="mailto:abnerrodrigo.sc@gmail.com"
-                aria-label="Email"
-                color="primary"
-              >
-                <EmailIcon />
-              </IconButton>
-              <IconButton
-                component={Link}
-                href="tel:+5512982090389"
-                aria-label="Telefone"
-                color="primary"
-              >
-                <PhoneIcon />
-              </IconButton>
-              <IconButton
-                component={Link}
                 href="https://github.com/abnercosta97"
                 aria-label="GitHub"
                 target="_blank"
