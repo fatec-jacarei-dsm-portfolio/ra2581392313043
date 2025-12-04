@@ -5,7 +5,7 @@ import StyledButton from "../StyledButton/StyledButton";
 const ContactButton = () => {
   const handleContact = () => {
     // Define o endereço de e-mail e o assunto do e-mail
-    const email = "abnerrodrigo.sc@gmail.com";
+    const email = "abner.costa3@fatec.sp.gov.br";
     const subject = "Contato";
     const body = "Olá, gostaria de entrar em contato.";
 

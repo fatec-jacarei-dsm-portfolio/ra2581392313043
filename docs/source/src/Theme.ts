@@ -13,20 +13,21 @@ let theme = createTheme({
     },
   },
   typography: {
-    fontFamily: [
-      '"Helvetica Neue"',
-      // "Poppins"
-      // '-apple-system',
-      // 'BlinkMacSystemFont',
-      // '"Segoe UI"',
-      // 'Roboto',
-      // '"Helvetica Neue"',
-      // 'Arial',
-      // 'sans-serif',
-      // '"Apple Color Emoji"',
-      // '"Segoe UI Emoji"',
-      // '"Segoe UI Symbol"',
-    ].join(","),
+    fontFamily: ['"Helvetica Neue"'].join(","),
+  },
+  components: {
+    MuiCssBaseline: {
+      styleOverrides: {
+        html: {
+          scrollBehavior: "smooth",
+          scrollPaddingTop: "100px", // Adiciona padding no scroll
+        },
+        // Estilos específicos para cada seção
+        "#sobre, #skills, #projetos": {
+          scrollMarginTop: "100px", // Adiciona margem no scroll
+        },
+      },
+    },
   },
 });
 theme = responsiveFontSizes(theme);

@@ -42,7 +42,7 @@ const Projetos: React.FC = () => {
   return (
     <StyledContainer id="projetos">
       <Typography variant="h2" gutterBottom color={"primary.main"}>
-        Projetos
+        Projetos Acadêmicos
       </Typography>
 
       {loading ? (

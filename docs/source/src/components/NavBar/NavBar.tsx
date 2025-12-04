@@ -28,6 +28,37 @@ const NavBar = () => {
     setAnchorElNav(null);
   };
 
+  // Função para rolagem suave com offset para a navbar
+  const handleSmoothScroll = (
+    event: React.MouseEvent<HTMLAnchorElement>,
+    targetId: string
+  ) => {
+    event.preventDefault();
+    const targetElement = document.getElementById(targetId.toLowerCase());
+
+    if (targetElement) {
+      // Calcula a posição considerando a altura da navbar
+      const navbarHeight = document.querySelector("header")?.clientHeight || 80;
+      const targetPosition =
+        targetElement.getBoundingClientRect().top +
+        window.pageYOffset -
+        navbarHeight;
+
+      window.scrollTo({
+        top: targetPosition,
+        behavior: "smooth",
+      });
+    }
+
+    handleCloseNavMenu();
+  };
+
+  // Função para lidar com navegação normal
+  const handleNavClick =
+    (page: string) => (event: React.MouseEvent<HTMLAnchorElement>) => {
+      handleSmoothScroll(event, page.toLowerCase());
+    };
+
   const StyledToobar = styled(Toolbar)(({ theme }) => ({
     display: "flex",
     justifyContent: "space-between",
@@ -81,7 +112,12 @@ const NavBar = () => {
               <MenuItem key={page} onClick={handleCloseNavMenu}>
                 <a
                   href={`#${page.toLowerCase()}`}
-                  style={{ textDecoration: "none", color: "inherit" }}
+                  onClick={(e) => handleNavClick(page)(e)}
+                  style={{
+                    textDecoration: "none",
+                    color: "inherit",
+                    width: "100%",
+                  }}
                 >
                   <Typography textAlign="center">{page}</Typography>
                 </a>
@@ -105,14 +141,12 @@ const NavBar = () => {
         >
           {pages.map((page) => (
             <a
+              key={page}
               href={`#${page.toLowerCase()}`}
+              onClick={(e) => handleNavClick(page)(e)}
               style={{ textDecoration: "none", color: "inherit" }}
             >
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
-              >
+              <Button sx={{ my: 2, color: "white", display: "block" }}>
                 {page}
               </Button>
             </a>
