@@ -127,7 +127,7 @@ const NavBar = () => {
         </Box>
 
         <Box sx={{ display: { xs: "flex", md: "none" }, mr: 1 }}>
-          <a href="/">
+          <a href="/ra2581392313043">
             <StyledImg src={Logo} alt="Logo" />
           </a>
         </Box>
