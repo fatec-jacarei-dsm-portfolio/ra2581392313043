@@ -25,7 +25,7 @@ const Footer = () => {
       <Container maxWidth="lg">
         <Grid container spacing={4} justifyContent="center">
           <Grid item xs={12} md={4} textAlign="center">
-            <a href="/">
+            <a href="/ra2581392313043">
               <img src={Logo} alt="Logo" style={{ width: "100px" }} />
             </a>
           </Grid>
